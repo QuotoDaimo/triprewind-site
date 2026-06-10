@@ -328,6 +328,11 @@ i { font-style: italic; }
   gap: 0.625rem;
 }
 .pricing-features li:last-child { border-bottom: none; }
+.pricing-features li em {
+  font-style: normal;
+  color: var(--slate);
+  font-size: 0.875em;
+}
 .pricing-features li::before {
   content: '';
   display: inline-block;
