@@ -203,6 +203,194 @@ i { font-style: italic; }
   margin: 0 auto;
 }
 
+/* ── Auto trip narrative ───────────────────────────────────────── */
+.narrative {
+  background: var(--white);
+  padding: var(--pad-section);
+}
+.narrative h2 {
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.narrative-subhead {
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  color: var(--slate);
+  max-width: 56ch;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.narrative-sample {
+  max-width: 620px;
+  margin: 0 auto;
+  background: var(--cream);
+  border-left: 4px solid var(--amber);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1.25rem 1.5rem 1.375rem;
+}
+.narrative-sample-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber-dark);
+  margin-bottom: 0.625rem;
+}
+.narrative-sample blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.0625rem, 1.8vw, 1.25rem);
+  color: var(--navy);
+  line-height: 1.55;
+}
+.narrative-notes {
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+}
+.narrative-notes p {
+  font-size: 0.9375rem;
+  color: var(--navy);
+  line-height: 1.7;
+  margin-bottom: 0.875rem;
+}
+.narrative-notes p:last-child { margin-bottom: 0; }
+.narrative-notes em {
+  font-style: italic;
+  color: var(--navy-light);
+}
+
+/* ── Elevation & speed profiles (Rewind) ───────────────────────── */
+.profiles {
+  background: var(--navy);
+  padding: var(--pad-section);
+}
+.profiles h2 {
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.profiles-subhead {
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  color: var(--slate-light);
+  max-width: 56ch;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.profiles-sample {
+  max-width: 620px;
+  margin: 0 auto;
+  background: var(--navy-mid);
+  border: 1px solid var(--navy-light);
+  border-radius: 0.625rem;
+  padding: 1.25rem 1.5rem 1.375rem;
+}
+.profiles-sample-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 1rem;
+}
+.profile-chart { margin-bottom: 1.25rem; }
+.profile-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.375rem;
+}
+.profile-chart-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+.profile-chart-range {
+  font-size: 0.75rem;
+  color: var(--slate-light);
+}
+.profile-chart svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+}
+.profiles-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  border-top: 1px solid var(--navy-light);
+  padding-top: 1rem;
+}
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.profile-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.profile-stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--slate-light);
+}
+.profiles-notes {
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+}
+.profiles-notes p {
+  font-size: 0.9375rem;
+  color: var(--cream);
+  line-height: 1.7;
+  margin-bottom: 0.875rem;
+}
+.profiles-notes p:last-child { margin-bottom: 0; }
+
+/* ── Export showcase ───────────────────────────────────────────── */
+.exports {
+  background: var(--cream);
+  padding: var(--pad-section);
+}
+.exports h2 {
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.exports-subhead {
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  color: var(--slate);
+  max-width: 52ch;
+  margin: 0 auto 3rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.exports-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+@media (min-width: 640px) {
+  .exports-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+}
+.export-story h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin-bottom: 0.625rem;
+}
+.export-story p {
+  font-size: 0.9375rem;
+  color: var(--navy);
+  line-height: 1.7;
+}
+
 /* ── Privacy block ─────────────────────────────────────────────── */
 .privacy-block {
   background: var(--white);
