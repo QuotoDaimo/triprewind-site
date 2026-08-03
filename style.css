@@ -431,6 +431,49 @@ i { font-style: italic; }
   background: var(--privacy-green);
   flex-shrink: 0;
 }
+.privacy-lede {
+  max-width: 680px;
+  margin: -0.75rem auto 2rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--navy);
+}
+.privacy-check {
+  max-width: 680px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 1.75rem;
+  background: var(--cream);
+  border-left: 4px solid var(--privacy-green);
+  border-radius: 0 0.5rem 0.5rem 0;
+  text-align: left;
+}
+.privacy-check h3 {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--privacy-green);
+  margin-bottom: 0.875rem;
+}
+.privacy-check p {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+.privacy-check .privacy-check-foot {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cream-dark);
+  color: var(--slate);
+}
+.privacy-check a {
+  color: var(--privacy-green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.privacy-check a:hover { color: var(--navy); }
 
 /* ── Pricing ───────────────────────────────────────────────────── */
 .pricing {
@@ -715,6 +758,47 @@ i { font-style: italic; }
   font-size: 0.9375rem;
 }
 .prose .contact-block a { color: var(--navy); font-weight: 600; }
+
+/* Network-egress table — wide content scrolls itself, never the page */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.5rem 0 1.5rem;
+  border: 1px solid var(--cream-dark);
+  border-radius: 0.5rem;
+}
+.egress-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.egress-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+  font-weight: 700;
+  padding: 0.75rem 0.875rem;
+  background: var(--cream);
+  border-bottom: 1px solid var(--cream-dark);
+}
+.egress-table td {
+  padding: 0.75rem 0.875rem;
+  vertical-align: top;
+  line-height: 1.5;
+  color: var(--navy);
+  border-bottom: 1px solid var(--cream-dark);
+}
+.egress-table td:first-child { font-weight: 700; }
+.egress-table tr:last-child td { border-bottom: none; }
+.egress-table .egress-note {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--slate);
+}
 
 /* ── Press page ────────────────────────────────────────────────── */
 .press-header {

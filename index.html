@@ -139,6 +139,33 @@
         <p>Elevation and speed graphs across your trip — scrub one and your route follows along.</p>
       </div>
 
+      <div class="feature">
+        <div class="feature-icon" aria-hidden="true">
+          <!-- Clock / recorded local time icon -->
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="18" stroke="#E8A33A" stroke-width="2.5"/>
+            <path d="M24 13V24L31 28" stroke="#E8A33A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <ellipse cx="24" cy="24" rx="8" ry="18" stroke="#F2C46A" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Times that stay where you were</h3>
+        <p>Breakfast at 08:00 in Rome still reads 08:00 when you're home. <i>Trip</i>Rewind keeps the clock you were actually on, so your trips never quietly rewrite themselves into your phone's current time zone.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon" aria-hidden="true">
+          <!-- Note / microphone icon -->
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="19" y="6" width="10" height="19" rx="5" fill="#E8A33A"/>
+            <path d="M13 22C13 28.075 17.925 33 24 33C30.075 33 35 28.075 35 22" stroke="#E8A33A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="24" y1="33" x2="24" y2="41" stroke="#E8A33A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="17" y1="41" x2="31" y2="41" stroke="#E8A33A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Say it before you forget it</h3>
+        <p>Drop a note at any moment — speak it or type it. It pins to the map exactly where you were standing, and shows up again when you replay the trip.</p>
+      </div>
+
     </div>
   </section>
 
@@ -250,13 +277,22 @@
         <line x1="26" y1="38" x2="26" y2="43" stroke="#F5EFE4" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
-    <h2>Built for privacy from day one.</h2>
+    <h2>Nothing leaves unless you send it.</h2>
+    <p class="privacy-lede">There is no &ldquo;<i>Trip</i>Rewind Central&rdquo;. Your journeys never come to us — there is nowhere for them to go. No login, no account, no sync, no background upload, nothing scheduled. Every single thing that ever leaves your phone — a trip to WhatsApp, a card to Facebook, an export to your computer, a backup — leaves because you tapped the button that sends it.</p>
     <ul class="privacy-bullets" role="list">
-      <li>No account required</li>
-      <li>No data ever leaves your device</li>
+      <li>No account, no login — we don't know who you are</li>
+      <li>Your location data is never sent off your device</li>
+      <li>No ads, no third-party analytics, no behavioural tracking</li>
       <li>Export your data any time, in open formats</li>
       <li>Privacy zones hide sensitive places from every export and share</li>
     </ul>
+
+    <div class="privacy-check">
+      <h3>Don't take our word for it</h3>
+      <p><strong>Look for the login screen.</strong> There isn't one. No account means there is nothing to sync to anybody's account.</p>
+      <p><strong>Turn your network off.</strong> <i>Trip</i>Rewind keeps recording everything, and you get a blank map — the honest demonstration of exactly what the network was being used for.</p>
+      <p class="privacy-check-foot">And the awkward bits, said first rather than found later: map tiles reach OpenStreetMap and Esri, our billing provider is contacted at launch to check whether you've unlocked Rewind, and exports are deliberately unencrypted so other apps can read them. Every network connection the app makes is <a href="/privacy/#network">listed in full in our privacy policy</a> &mdash; none of them ever receives your location.</p>
+    </div>
   </section>
 
   <!-- ── Pricing ──────────────────────────────────────────────── -->
@@ -336,7 +372,7 @@
 
         <div class="faq-item">
           <h3>Some locations are sensitive — can I set privacy zones?</h3>
-          <p>Yes. Add a privacy zone around any location — 250m by default, any distance you like — and <i>Trip</i>Rewind will never share paths inside that zone in an export or share card. The points still live in your secure backup, just not in anything you share. Privacy zones are a free feature, always.</p>
+          <p>Yes. Mark any location as a privacy zone — <i>Trip</i>Rewind suggests a radius comfortably wider than the place itself, around 200m, and you can set it to any distance you like — and it will never share paths inside that zone in an export or share card. You'd have to deliberately override that to include them. The points still live in your own encrypted backup, just not in anything you share. Privacy zones are a free feature, always.</p>
         </div>
 
         <div class="faq-item">
